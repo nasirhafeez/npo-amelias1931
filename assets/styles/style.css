@@ -29,7 +29,7 @@
 
 #logo
 {
-  width: 35%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -86,7 +86,7 @@ and (min-width: 768px)
 
   #logo
   {
-    max-width: 10%;
+    max-width: 15%;
   }
 
   .main
