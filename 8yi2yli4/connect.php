@@ -10,7 +10,7 @@ $redirect_url = $_SERVER['REDIRECT_URL'];
 $site_id = $_SERVER['SITE_ID'];
 
 if ($_SESSION['method'] == 'sms') {
-    $email_verified = 0;
+  $email_verified = 0;
 } else {
   $email_verified = 1;
 }
@@ -20,6 +20,11 @@ if ($user_type == "new") {
   $lname = $_SESSION['lname'];
   $phone = $_SESSION['phone'];
   $email = $_SESSION['email'];
+  $gender = $_POST['gender'];
+  $birthday = $_POST['birthday'];
+  $street = $_POST['street'];
+  $city = $_POST['city'];
+  $state = $_POST['state'];
 
   $postData = [
     "mac" => $mac,
@@ -30,6 +35,11 @@ if ($user_type == "new") {
     "email" => $email,
     "email_verified" => $email_verified,
     "phone" => $phone,
+    "gender" => $gender,
+    "birthday" => $birthday,
+    "street" => $street,
+    "city" => $city,
+    "state" => $state,
   ];
 } else {
   $postData = [
