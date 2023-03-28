@@ -42,15 +42,15 @@ require 'header.php';
                     <div class="field">
                         <div class="control">
                             <label class="radio">
-                                <input type="radio" name="gender" value="male">
+                                <input type="radio" name="gender" value="M">
                                 Male
                             </label>
                             <label class="radio">
-                                <input type="radio" name="gender" value="female">
+                                <input type="radio" name="gender" value="F">
                                 Female
                             </label>
                             <label class="radio">
-                                <input type="radio" name="gender" value="other">
+                                <input type="radio" name="gender" value="NA">
                                 Other
                             </label>
                         </div>
